@@ -3,236 +3,466 @@
 
 ![Project Status](https://img.shields.io/badge/status-Idea%20Phase-blue)
 ![AI](https://img.shields.io/badge/AI-Generative%20AI-purple)
-![Architecture](https://img.shields.io/badge/Architecture-RAG-green)
+![Architecture](https://img.shields.io/badge/Architecture-Hybrid%20RAG-green)
+![Domain](https://img.shields.io/badge/Domain-FinTech-orange)
 
 ---
 
-## 🚀 Overview
+# 🚀 Overview
 
-**Neutrality AI** is an AI-powered dispute resolution assistant that helps financial institutions solve payment disputes faster, more fairly, and with complete transparency.
+**Neutrality AI** is an AI-powered dispute resolution assistant designed to help financial institutions resolve payment disputes faster, more fairly, and with complete transparency.
 
-When a customer raises a payment dispute, companies need to analyze multiple sources of information such as transaction details, customer complaints, merchant responses, invoices, delivery proofs, and financial policies.
-
-Currently, this process requires a lot of manual effort, takes significant time, and may lead to inconsistent decisions.
-
-Neutrality AI uses **Generative AI, Retrieval-Augmented Generation (RAG), and Explainable AI** to analyze dispute evidence and provide fair resolution recommendations with clear reasoning.
-
-The goal is not to replace human investigators but to assist them with faster and better decision-making.
-
----
-
-# Problem Statement
-
-Millions of payment disputes occur every year between customers and businesses.
-
-Existing dispute resolution processes face several challenges:
-
-- ⏳ Long processing times due to manual investigation
-- 💰 High operational costs
-- 📄 Difficulty analyzing large amounts of evidence
-- ❓ Lack of transparency in decisions
-- ⚖️ Inconsistent dispute outcomes
-
-Customers need faster and fairer solutions, while financial institutions need scalable systems to handle disputes efficiently.
-
----
-
-# 💡 Proposed Solution
-
-Neutrality AI works as an **AI decision-support system** for dispute investigators.
-
-The system:
-
-1. Collects dispute-related information
-2. Understands customer and merchant evidence
-3. Retrieves relevant financial policies
-4. Compares both sides of the dispute
-5. Detects missing information and inconsistencies
-6. Generates a fair resolution recommendation with explanation
-
-Human experts remain responsible for the final decision.
-
----
-
-# ✨ Key Features
-
-## 1. Intelligent Evidence Analysis
-
-Neutrality AI can analyze:
+When a customer raises a payment dispute, financial institutions need to analyze multiple sources of evidence, including:
 
 - Customer complaints
 - Merchant responses
 - Transaction records
 - Invoices and receipts
-- Delivery confirmation documents
-- Financial policies and rules
+- Delivery proofs
+- Financial policies and regulations
+
+Currently, dispute investigation requires significant manual effort, takes days to complete, and may result in inconsistent decisions.
+
+Neutrality AI combines **Generative AI, Retrieval-Augmented Generation (RAG), Hybrid Search, and Explainable AI** to analyze dispute evidence and provide investigators with fair, transparent, and evidence-based recommendations.
+
+The system does not replace human investigators. It works as an **AI decision-support assistant** that helps experts make faster and more reliable decisions.
 
 ---
 
-## 2. Retrieval-Augmented Generation (RAG)
+# ❓ Problem Statement
 
-The system uses RAG architecture to:
+Millions of payment disputes occur every year between customers and businesses.
 
-- Retrieve relevant dispute policies
-- Provide answers based on trusted information
-- Reduce AI hallucinations
-- Improve reliability of recommendations
+Traditional dispute resolution systems face several challenges:
+
+- ⏳ Long resolution time due to manual investigation
+- 💰 High operational cost
+- 📄 Difficulty analyzing large amounts of evidence
+- ❌ Missing important information from documents
+- ⚖️ Inconsistent dispute outcomes
+- 🔍 Lack of transparency behind decisions
+
+Financial institutions need an intelligent system that can process evidence efficiently while maintaining fairness and trust.
 
 ---
 
-## 3. Explainable AI Decisions
+# 💡 Proposed Solution
 
-Instead of only giving an outcome, Neutrality AI explains the reasoning behind its recommendation.
+Neutrality AI provides an AI-powered investigation assistant that analyzes dispute cases from both customer and merchant perspectives.
+
+The system:
+
+1. Collects dispute evidence from multiple sources
+2. Extracts important information using AI
+3. Verifies transaction and document details
+4. Retrieves relevant financial policies
+5. Compares customer and merchant evidence
+6. Detects conflicts and missing information
+7. Generates an explainable resolution recommendation
+
+The final decision remains with a human investigator.
+
+---
+
+# ✨ Key Features
+
+## 1. Multi-Modal Evidence Analysis
+
+Neutrality AI can understand different types of dispute evidence:
+
+- PDF documents
+- Images and screenshots
+- Customer complaints
+- Merchant responses
+- Transaction records
+- Receipts and invoices
+- Delivery confirmation proofs
+- Policy documents
+
+The system extracts meaningful information from different formats and creates a complete dispute understanding.
+
+---
+
+# 2. Evidence Verification Engine
+
+The system compares information from different sources.
 
 Example:
 
-This improves transparency and builds trust.
+Customer Claim:
+
+```
+"I did not authorize this transaction."
+```
+
+Merchant Evidence:
+
+```
+Transaction completed using saved payment method.
+OTP verification was successful.
+```
+
+AI identifies:
+
+```
+Conflict:
+Customer denies authorization.
+
+Supporting Evidence:
+OTP verification available.
+
+Risk Level:
+Medium
+
+Additional Information Required:
+Device history and transaction location.
+```
 
 ---
 
-## 4. Fairness Analysis
+# 3. Hybrid Retrieval-Augmented Generation (RAG)
 
-Neutrality AI evaluates evidence from both:
+Neutrality AI uses advanced RAG architecture instead of simple document search.
 
-Customer side:
+The system combines:
+
+### Semantic Search
+
+Understands the meaning of user queries.
+
+Example:
+
+"Money deducted but product not received"
+
+Matches:
+
+"Goods not delivered chargeback policy"
+
+
+### Keyword Search
+
+Finds exact policy terms and dispute codes.
+
+Example:
+
+```
+Chargeback Reason Code 13.1
+Merchant Dispute Rules
+```
+
+---
+
+The hybrid retrieval system improves:
+
+- Accuracy
+- Reliability
+- Policy matching
+- Reduction of AI hallucinations
+
+---
+
+# 4. Explainable AI Decision Report
+
+Neutrality AI does not only provide a recommendation.
+
+It explains:
+
+- Evidence considered
+- Policies used
+- Conflicting information
+- Confidence score
+- Reason behind recommendation
+
+Example:
+
+```
+Recommendation:
+
+Approve Refund
+
+Confidence Score:
+
+89%
+
+Reason:
+
+Customer reported unauthorized transaction.
+Merchant failed to provide sufficient authorization evidence.
+
+Evidence Used:
+
+✓ Transaction history
+✓ Customer complaint
+✓ Merchant response
+
+Policy Reference:
+
+Fraud Protection Policy Section 5.2
+```
+
+---
+
+# 5. Fairness & Bias Checking
+
+The system evaluates both sides equally.
+
+Customer Evidence:
+
 - Complaint details
 - Transaction history
 - Supporting documents
 
-Merchant side:
+
+Merchant Evidence:
+
 - Payment records
 - Delivery proof
 - Business response
 
-The system focuses on facts instead of assumptions.
 
----
-
-## 5. Faster Resolution
-
-By automatically analyzing documents and finding important information, Neutrality AI reduces the time required for dispute investigation.
+Neutrality AI focuses on available evidence instead of assumptions.
 
 ---
 
 # 🏗️ System Architecture
-             User Dispute Input
-                     |
-                     |
-                     v
-          Document & Evidence Processing
-                     |
-                     |
-                     v
-          Information Extraction Layer
-                     |
-                     |
-                     v
-          Vector Database (Knowledge Base)
-                     |
-                     |
-                     v
-              RAG Retrieval System
-                     |
-                     |
-                     v
-                LLM Reasoning
-                     |
-                     |
-                     v
-      Explainable Resolution Recommendation
-      
+
+
+```
+                 Customer / Merchant Evidence
+                          |
+                          ↓
+              Multi-Modal Document Analyzer
+        (PDF, Images, Receipts, Emails, Text)
+                          |
+                          ↓
+              Evidence Extraction Layer
+                          |
+              ---------------------------
+              |                         |
+              ↓                         ↓
+     Transaction Analyzer       Document Analyzer
+              |                         |
+              ---------------------------
+                          |
+                          ↓
+              Evidence Verification Engine
+                          |
+                          ↓
+              Hybrid Retrieval System
+              -------------------------
+              |                       |
+              ↓                       ↓
+        Vector Search           Rule Engine
+     (Semantic Matching)    (Financial Policies)
+              |                       |
+              -------------------------
+                          |
+                          ↓
+                 RAG Decision Engine
+                          |
+                          ↓
+              Fairness & Bias Checker
+                          |
+                          ↓
+          Explainable Resolution Report
+                          |
+                          ↓
+                Human Investigator
+                          |
+                          ↓
+              Final Decision & Feedback
+```
+
 ---
 
 # 🧠 Technologies Used
+
 
 ## Artificial Intelligence
 
 - Generative AI
 - Large Language Models (LLMs)
 - Retrieval-Augmented Generation (RAG)
-- Explainable AI
+- Explainable AI (XAI)
+- Natural Language Processing (NLP)
+- Multi-Modal AI
+- Evidence Analysis
 
-## Backend
+
+## LLM & AI Models
+
+- GPT-4 / GPT-4o
+- Gemini
+- Llama 3
+- Groq LLM
+- Hugging Face Transformers
+- Sentence Transformers
+
+
+## RAG & Knowledge Retrieval
+
+- LangChain
+- LangGraph
+- Hybrid Retrieval System
+- Vector Search
+- BM25 Keyword Retrieval
+- Re-ranking Models
+
+Vector Databases:
+
+- FAISS
+- ChromaDB
+- Pinecone
+- Astra DB
+
+
+## Document Intelligence
+
+- PyMuPDF
+- PyPDF
+- Unstructured
+- OCR-based text extraction
+- PDF, DOCX, XLSX, CSV, JSON processing
+
+
+## Backend Development
 
 - Python
 - FastAPI
+- REST APIs
+- Pydantic
 
-## AI Frameworks
 
-- LangChain
-- Hugging Face Transformers
+## Database & Storage
 
-## Vector Database
+Structured Database:
 
-- FAISS / ChromaDB / Pinecone
+- PostgreSQL
 
-## Frontend (Planned)
 
-- Streamlit / React
+Vector Storage:
+
+- Astra DB
+- FAISS
+- ChromaDB
+
+
+Cloud Storage:
+
+- AWS S3
+
+
+## Frontend
+
+Prototype:
+
+- Streamlit
+
+
+Future Scalable Interface:
+
+- React.js
+
+
+## Deployment & Development
+
+- Docker
+- Git & GitHub
+- Render
+- AWS
+- Streamlit Cloud
+- Environment Variables (.env)
 
 ---
 
 # 🔍 Example Workflow
 
-### Input:
+
+## Input
 
 Customer:
-> "I did not make this payment. Please refund my money."
+
+```
+"I don't recognize this payment. Please refund my money."
+```
+
 
 Merchant:
-> "The payment was completed successfully from the customer's account."
+
+```
+"The payment was completed successfully."
+```
+
 
 Documents:
+
 - Transaction history
 - Merchant proof
-- Bank policies
+- Bank policy documents
+
 
 ---
 
-### AI Analysis:
+## AI Processing
 
-Neutrality AI checks:
+Neutrality AI analyzes:
 
 ✅ Transaction details  
 ✅ Customer complaint  
 ✅ Merchant evidence  
-✅ Fraud policies  
+✅ Financial policies  
+✅ Previous dispute rules  
+
 
 ---
 
-### Output:
+## Output
+
+
+```
+Resolution Recommendation:
+
+Customer claim is likely valid.
+
+Confidence:
+
+87%
+
+Reason:
+
+Transaction shows unusual activity.
+Merchant evidence does not confirm customer authorization.
+
+Suggested Action:
+
+Proceed with refund investigation.
+```
 
 ---
 
 # 🎯 Expected Impact
 
+
 Neutrality AI can help:
 
 ✅ Customers receive faster dispute resolutions  
-✅ Banks reduce manual investigation work  
-✅ Companies lower operational costs  
+✅ Banks reduce manual investigation workload  
+✅ Companies reduce operational costs  
 ✅ Improve trust in digital payments  
-✅ Make decisions more transparent and fair  
+✅ Create transparent AI-assisted decisions  
+
 
 ---
 
 # 🔮 Future Improvements
 
-- Real-time transaction fraud detection
+- Real-time fraud detection
 - Multi-language dispute support
 - Integration with banking systems
 - Advanced fairness evaluation models
-- Human feedback-based learning system
+- Continuous learning from investigator feedback
+- Automated dispute workflow management
 
----
-
-# 👨‍💻 Team
-
-**Project Name:** Neutrality AI
-
-**Category:** Generative AI / FinTech / Responsible AI
-
-**Purpose:** Building fair, transparent, and explainable AI systems for dispute resolution.
 
 ---
 
@@ -241,3 +471,9 @@ Neutrality AI can help:
 🚧 Idea Phase
 
 Prototype development and AI pipeline implementation are planned for the next stage.
+
+---
+
+# 👨‍💻 Project Category
+
+**FinTech | Responsible AI | Generative AI | Explainable AI**
