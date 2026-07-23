@@ -466,14 +466,3 @@ Neutrality AI can help:
 
 ---
 
-# 📌 Current Status
-
-🚧 Idea Phase
-
-Prototype development and AI pipeline implementation are planned for the next stage.
-
----
-
-# 👨‍💻 Project Category
-
-**FinTech | Responsible AI | Generative AI | Explainable AI**
